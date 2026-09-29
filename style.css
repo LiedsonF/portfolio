@@ -452,59 +452,52 @@ ul {
 
 .hero-buttons {
     display: flex;
-
     gap: 12px;
-
     margin-top: 35px;
+    flex-wrap: wrap;
 }
 
 .btn {
     display: inline-flex;
-
     align-items: center;
-
     justify-content: center;
+    gap: 9px;
 
     padding: 13px 20px;
 
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
 
-    font-size: 11px;
+    border: 1px solid rgba(255,255,255,0.12);
+    transition: 0.3s ease;
 
-    border: 1px solid var(--border);
-
-    transition: 0.3s;
+    cursor: pointer;
 }
 
 .btn.primary {
     background: var(--green);
-
     color: #000;
-
     border-color: var(--green);
-
     font-weight: 700;
 }
 
 .btn.primary:hover {
-    box-shadow:
-        0 0 25px rgba(0,255,136,0.25);
-
     transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(0,255,136,0.25);
 }
 
 .btn.secondary {
-    color: #aaa;
-
-    background: rgba(255,255,255,0.02);
+    color: #ddd;
+    background: rgba(255,255,255,0.04);
 }
 
 .btn.secondary:hover {
     color: var(--green);
-
     border-color: var(--green);
+    background: rgba(0,255,136,0.05);
+    transform: translateY(-2px);
 }
-
 .hero-tech {
     display: flex;
 
